@@ -152,6 +152,19 @@ ul.tl li::before{content:'▸';position:absolute;left:0;color:var(--teal);font-w
 .arrow-flow{position:absolute;opacity:0}
 .slide.v .arrow-flow{animation:arrowIn 1s var(--ease) .6s forwards}
 @keyframes arrowIn{to{opacity:.3}}
+
+/* MINI CODE BLOCK (rangkuman-style, no header) */
+.cbs{background:#000;border:1px solid rgba(255,70,85,.15);border-radius:8px;padding:14px 20px;margin:10px 0;font-family:'Fira Code',var(--font-mono);font-size:.92rem;line-height:1.6;overflow-x:auto}
+/* INLINE CODE CHIP */
+.chip{display:inline-block;background:#000;border:1px solid rgba(0,255,194,.2);border-radius:4px;padding:2px 8px;font-family:'Fira Code',var(--font-mono);font-size:.85em;color:var(--teal)}
+
+/* RANGKUMAN LIST */
+ul.rk{list-style:none;padding:0;max-width:920px;margin:0 auto}
+ul.rk>li{padding:10px 0 10px 24px;position:relative;font-size:1.02rem;line-height:1.7}
+ul.rk>li::before{content:'▸';position:absolute;left:0;color:var(--teal);font-weight:700}
+
+/* QUIZ BOX */
+.qbox{background:var(--steel);border-left:4px solid var(--amber);padding:26px 30px;max-width:820px;margin:20px auto 0}
 </style>
 </head>
 <body>
@@ -173,7 +186,7 @@ ul.tl li::before{content:'▸';position:absolute;left:0;color:var(--teal);font-w
 </div>
 <p class="rv" style="opacity:.25;margin-top:28px;font-size:.85rem;transition-delay:.6s">Pemateri: Asisten Praktikum &bull; Pertemuan Array</p>
 </div>
-<div class="slbl">SLIDE 01 / 09</div>
+<div class="slbl">SLIDE 01 / 10</div>
 </section>
 
 <!-- S2: AGENDA -->
@@ -192,7 +205,7 @@ ul.tl li::before{content:'▸';position:absolute;left:0;color:var(--teal);font-w
 <div class="tc rv" style="background:#fff;transition-delay:.5s"><span class="idx">TAKTIK-06</span><h3 style="color:var(--graphite)">Akses &amp; Ubah</h3><p style="color:var(--graphite);opacity:.75;font-size:.95rem">Baca, tulis, dan modifikasi elemen</p></div>
 </div>
 </div>
-<div class="slbl" style="color:var(--graphite)">SLIDE 02 / 09</div>
+<div class="slbl" style="color:var(--graphite)">SLIDE 02 / 10</div>
 </section>
 
 <!-- S3: PENGERTIAN -->
@@ -227,7 +240,7 @@ ul.tl li::before{content:'▸';position:absolute;left:0;color:var(--teal);font-w
 </div>
 </div>
 </div>
-<div class="slbl">SLIDE 03 / 09</div>
+<div class="slbl">SLIDE 03 / 10</div>
 </section>
 
 
@@ -263,7 +276,7 @@ ul.tl li::before{content:'▸';position:absolute;left:0;color:var(--teal);font-w
 </div>
 </div>
 </div>
-<div class="slbl">SLIDE 04 / 09</div>
+<div class="slbl">SLIDE 04 / 10</div>
 </section>
 
 <!-- S5: PERBANDINGAN -->
@@ -308,7 +321,7 @@ cout &lt;&lt; a;
 </div>
 </div>
 </div>
-<div class="slbl" style="color:var(--graphite)">SLIDE 05 / 09</div>
+<div class="slbl" style="color:var(--graphite)">SLIDE 05 / 10</div>
 </section>
 
 <!-- S6: INISIALISASI LANGSUNG -->
@@ -346,7 +359,7 @@ Nilai ke-4 = 90</pre></div>
 <p style="font-size:.85rem;opacity:.5;margin-top:6px"><span class="marker a" style="font-size:.8rem;transform:rotate(-2deg)">Perhatikan!</span> &nbsp;Indeks dimulai dari 0, bukan 1. Elemen terakhir = <code style="color:var(--teal)">n[4]</code>, bukan <code style="color:var(--red)">n[5]</code>.</p>
 </div>
 </div>
-<div class="slbl">SLIDE 06 / 09</div>
+<div class="slbl">SLIDE 06 / 10</div>
 </section>
 
 
@@ -385,7 +398,7 @@ Nilai ke-4 = 90</pre></div>
 </div>
 </div>
 </div>
-<div class="slbl">SLIDE 07 / 09</div>
+<div class="slbl">SLIDE 07 / 10</div>
 </section>
 
 <!-- S8: AKSES ELEMEN -->
@@ -426,35 +439,66 @@ cout &lt;&lt; arr[<span class="num">2</span>];  <span class="cm">// sekarang 99<
 </div>
 </div>
 </div>
-<div class="slbl">SLIDE 08 / 09</div>
+<div class="slbl">SLIDE 08 / 10</div>
 </section>
 
-<!-- S9: TUGAS -->
-<section class="slide s-red" id="s9">
+<!-- S9: RANGKUMAN -->
+<section class="slide s-ink" id="s9">
 <div class="scan"></div>
-<svg class="arrow-flow" style="left:6%;top:30%" width="160" height="50" viewBox="0 0 160 50" fill="none"><path d="M10 40C50 5,110 5,150 30" stroke="var(--ink)" stroke-width="2.5" stroke-dasharray="8 6"/><polygon points="150,30 138,24 140,38" fill="var(--ink)"/></svg>
-<svg class="arrow-flow" style="right:6%;bottom:28%" width="120" height="40" viewBox="0 0 120 40" fill="none"><path d="M110 35C80 5,40 5,10 25" stroke="var(--ink)" stroke-width="2.5" stroke-dasharray="8 6"/><polygon points="10,25 22,19 20,33" fill="var(--ink)"/></svg>
-<div class="hud" style="text-align:center">
+<div class="dots"><div class="dot" style="left:8%;bottom:25%;animation-delay:.4s"></div><div class="dot" style="left:92%;bottom:55%;animation-delay:1.6s"></div></div>
+<div class="hud">
 <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
-<div class="rv"><span class="tag dark">FINAL MISSION</span></div>
-<h2 class="rv" style="transition-delay:.15s;font-size:clamp(40px,7vw,80px)">Tugas Kelompok</h2>
-<div class="rs" style="transition-delay:.3s;max-width:680px;margin:16px auto 0;text-align:left">
-<div style="background:var(--ink);padding:28px;border-left:4px solid var(--bone)">
-<h3 style="color:var(--bone);font-size:1.35rem;margin-bottom:14px;letter-spacing:.06em">&#127919; Aplikasi Kasir Sederhana</h3>
-<p style="color:var(--bone);opacity:.8;margin-bottom:14px">Buat program C++ yang mensimulasikan kasir restoran sederhana:</p>
-<ul class="tl" style="color:var(--bone)">
-<li>Simpan daftar <strong>nama menu</strong> dan <strong>harga</strong> menggunakan array</li>
-<li>Tampilkan seluruh menu beserta harganya ke layar</li>
-<li>User memilih item dan jumlah pesanan</li>
-<li>Hitung <strong>total harga</strong> seluruh pesanan</li>
-<li>Minta input <strong>jumlah uang bayar</strong></li>
-<li>Tampilkan <strong>kembalian</strong> (jika cukup) atau <strong>kekurangan</strong> (jika kurang)</li>
+<div class="rv"><span class="tag teal">DEBRIEFING</span></div>
+<h2 class="rv" style="transition-delay:.1s">Rangkuman</h2>
+<ul class="rk">
+<li class="rv" style="transition-delay:.15s">Sebuah larik (misalnya bertipe <span class="chip">int</span>) dapat dibuat dengan sintaks berikut:
+<div class="cbs"><span class="kw">int</span> data[<span class="num">5</span>];</div>
+</li>
+<li class="rv" style="transition-delay:.2s">Larik tersebut memiliki 5 elemen: <span class="chip">data[0]</span> sampai dengan <span class="chip">data[4]</span>.</li>
+<li class="rv" style="transition-delay:.25s">Dengan kata lain, larik tersebut memiliki indeks 0 sampai dengan 4. Penomoran indeks array dimulai dari 0.</li>
+<li class="rv" style="transition-delay:.3s">Untuk mengisi elemen larik, kita bisa menggunakan operator <em>assignment</em> seperti biasa:
+<div class="cbs">data[<span class="num">3</span>] = <span class="num">100</span>;</div>
+</li>
+<li class="rv" style="transition-delay:.35s">Kita bisa menginisialisasi larik bersamaan dengan deklarasi larik sebagai berikut:
+<div class="cbs"><span class="kw">int</span> data[<span class="num">5</span>] = {<span class="num">10</span>, <span class="num">30</span>, <span class="num">50</span>, <span class="num">100</span>, <span class="num">150</span>};</div>
+</li>
+<li class="rv" style="transition-delay:.4s">Salah satu manfaat larik adalah kita bisa menggunakan perulangan untuk iterasi terhadap indeksnya. Sebagai contoh, untuk mencetak seluruh nilai elemen-elemen larik, kita bisa menggunakan:
+<div class="cbs"><span class="kw">for</span> (<span class="kw">int</span> i = <span class="num">0</span>; i &lt; <span class="num">5</span>; i++) {
+    cout &lt;&lt; data[i] &lt;&lt; endl;
+}</div>
+</li>
+<li class="rv" style="transition-delay:.45s">Sebuah larik dapat juga terdiri atas lebih dari satu dimensi, misalnya sebagai berikut:
+<div class="cbs"><span class="kw">int</span> data[<span class="num">3</span>][<span class="num">4</span>];</div>
+</li>
+<li class="rv" style="transition-delay:.5s">Larik tersebut memiliki 12 elemen: <span class="chip">data[0][0]</span> sampai dengan <span class="chip">data[2][3]</span>.</li>
 </ul>
 </div>
+<div class="slbl">SLIDE 09 / 10</div>
+</section>
+
+<!-- S10: KUIS PENUTUP -->
+<section class="slide s-steel" id="s10">
+<div class="scan"></div>
+<div class="dots"><div class="dot" style="left:6%;bottom:35%;animation-delay:.7s"></div><div class="dot" style="left:94%;bottom:50%;animation-delay:1.9s"></div></div>
+<div class="hud">
+<span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+<div class="rv"><span class="tag amber">FINAL CHECK</span></div>
+<h2 class="rv" style="transition-delay:.1s">Kuis Penutup</h2>
+<div class="qbox rv" style="transition-delay:.2s;max-width:760px">
+<p style="margin-bottom:4px;font-size:1.05rem"><strong style="color:var(--amber)">1.</strong>&nbsp; Apakah keluaran dari potongan program berikut?</p>
+<div class="cb" style="margin-top:14px"><div class="hd">MAIN.CPP</div><pre><span class="kw">int</span> data[<span class="num">10</span>] = {<span class="num">1</span>, <span class="num">1</span>, <span class="num">3</span>, <span class="num">4</span>, <span class="num">3</span>, <span class="num">3</span>, <span class="num">3</span>, <span class="num">9</span>, <span class="num">1</span>, <span class="num">9</span>};
+<span class="kw">int</span> hasil = <span class="num">0</span>;
+
+<span class="kw">for</span> (<span class="kw">int</span> i = <span class="num">0</span>; i &lt; <span class="num">9</span>; i++) {
+    <span class="kw">if</span> (data[i] == data[i + <span class="num">1</span>]) {
+        hasil++;
+    }
+}
+
+cout &lt;&lt; hasil &lt;&lt; endl;</pre></div>
 </div>
-<p class="rv" style="margin-top:24px;opacity:.6;font-size:.9rem;transition-delay:.5s;color:var(--ink)">Good luck, Agents! Kerjakan bersama kelompok. &#128640;</p>
 </div>
-<div class="slbl" style="color:var(--ink)">SLIDE 09 / 09</div>
+<div class="slbl">SLIDE 10 / 10</div>
 </section>
 
 <!-- NAV -->
